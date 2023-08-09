@@ -15,7 +15,7 @@ const About = () => {
               MERN Bootcamp experience and deep understanding of the technology. Proficiency in web application development and teamwork. Eager to make a career as a Fullstack Web Developer and contribute in creating the best technology solutions.
               </p>
               <br />
-              <a href="" download>
+              <a href="./src/assets/Cv-Agung_Rifai.pdf" download>
                 <button className="bg-cyan-600 text-white px-4 py-2 rounded-full shadow-md hover:bg-cyan-500">
                   Download CV
                 </button>
