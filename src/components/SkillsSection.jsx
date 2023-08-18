@@ -25,11 +25,11 @@ const skillsData = [
 const SkillsSection = () => {
   return (
     <section id="skills" className="p-10 bg-gray-800 relative">
-      <div className="mt-8 text-gray-100 text-center">
-        <h3 className="text-4xl font-semibold">
+      <div className="mt-4 mb-4 text-gray-100 text-center">
+        <h3 className="mb-8 text-4xl font-semibold">
           My <span className="text-cyan-600">Skills</span>
         </h3>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <div data-aos="fade-up" className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
           {skillsData.map((skill, index) => (
             <Skill key={index} name={skill.name} image={skill.image} />
           ))}

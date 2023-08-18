@@ -1,23 +1,14 @@
 import React from "react";
 import hero from "../assets/images/hero.png";
 const Hero = () => {
-  // const social_media = [
-  //   "logo-instagram",
-  //   "logo-facebook",
-  //   "logo-linkedin",
-  //   "logo-gitlab",
-  // ];
   const social_media = [
-    { link: "https://www.instagram.com/agungrifai10/", 
-      icon: "logo-instagram" },
+    { link: "https://www.instagram.com/agungrifai10/", icon: "logo-instagram" },
     {
       link: "https://web.facebook.com/rifaithebluessejati.rifaithebluessejati",
       icon: "logo-facebook",
     },
-    { link: "https://www.linkedin.com/in/agung-rifai",
-      icon: "logo-linkedin" },
-    { link: "https://gitlab.com/agungfay10",
-      icon: "logo-gitlab" },
+    { link: "https://www.linkedin.com/in/agung-rifai", icon: "logo-linkedin" },
+    { link: "https://gitlab.com/agungfay10", icon: "logo-gitlab" },
   ];
 
   return (
@@ -25,11 +16,14 @@ const Hero = () => {
       id="home"
       className="min-h-screen flex py-10 md:flex-row flex-col items-center"
     >
-      <div className="flex-1 flex items-center justify-center h-full animate-pulse">
+      <div
+        data-aos="fade-right"
+        className="flex-1 flex items-center justify-center h-full"
+      >
         <img src={hero} alt="" className="md:w-11/12 h-full object-cover" />
       </div>
       <div className="flex-1">
-        <div className="md:text-left text-center">
+        <div data-aos="fade-down" className="md:text-left text-center">
           <h1 className="md:text-5xl text-2xl md:leading-normal leading-10 text-white font-bold">
             <span className="text-cyan-600 md:text-6xl text-5xl">
               Hello!

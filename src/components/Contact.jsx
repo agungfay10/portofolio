@@ -20,7 +20,7 @@ const Contact = () => {
           className="mt-10 flex md:flex-row flex-col
          gap-6 max-w-7xl bg-gray-800 md:p-6 p-2 rounded-lg mx-auto"
         >
-          <div className="flex flex-col gap-7">
+          <div data-aos="fade-right" className="flex flex-col gap-7">
             {contact_info.map((contact, i) => (
               <div
                 key={i}
