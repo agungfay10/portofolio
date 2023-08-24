@@ -21,7 +21,7 @@ const About = () => {
                 and contribute in creating the best technology solutions.
               </p>
               <br />
-              <a href="https://drive.google.com/file/d/1y7LgvUCxIz6oGZSUMBqgRp-2VTT89sY_/view?usp=drive_link">
+              <a href="https://drive.google.com/file/d/1ZUCyO2Em3mmHVR8D5T6nIdkktN4aH9x1/view?usp=sharing">
                 <button className="bg-cyan-600 text-white px-4 py-2 rounded-full shadow-md hover:bg-cyan-500">
                   Download CV
                 </button>
