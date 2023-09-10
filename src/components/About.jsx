@@ -2,7 +2,7 @@ import React from "react";
 import aboutImg from "../assets/images/photo.jpg";
 const About = () => {
   return (
-    <section id="about" className="py-10 text-white">
+    <section id="about" className="items-center py-16 text-white">
       <div className="text-center mt-6">
         <h3 className="text-4xl font-semibold">
           About <span className="text-cyan-600">Me</span>
@@ -15,10 +15,7 @@ const About = () => {
           <div className="p-3">
             <div className="text-gray-300 my-3">
               <p className="text-justify leading-7 w-11/12 mx-auto">
-                MERN Bootcamp experience and deep understanding of the
-                technology. Proficiency in web application development and
-                teamwork. Eager to make a career as a Fullstack Web Developer
-                and contribute in creating the best technology solutions.
+              I have an interest in Frontend and Backend web development, through studying at Eduwork's MERN Bootcamp. I also have the ability to develop web applications and teamwork and have several portfolios. Eager to pursue a career in frontend and backend web development and contribute to creating the best technology solutions.
               </p>
               <br />
               <a href="https://drive.google.com/file/d/1ZUCyO2Em3mmHVR8D5T6nIdkktN4aH9x1/view?usp=sharing">
@@ -29,7 +26,7 @@ const About = () => {
             </div>
           </div>
           <div className="flex-1 md:mt-0 mt-6 flex justify-center items-center">
-            <div className="lg:w-48 h-full relative sm:w-10/12 w-11/12 max-w-sm aboutImg">
+            <div className="lg:w-72 h-full relative sm:w-10/12 w-11/12 max-w-sm aboutImg">
               <img
                 src={aboutImg}
                 alt=""
