@@ -18,7 +18,7 @@ const About = () => {
               I have an interest in Frontend and Backend web development, through studying at Eduwork's MERN Bootcamp. I also have the ability to develop web applications and teamwork and have several portfolios. Eager to pursue a career in frontend and backend web development and contribute to creating the best technology solutions.
               </p>
               <br />
-              <a href="https://drive.google.com/file/d/1ZUCyO2Em3mmHVR8D5T6nIdkktN4aH9x1/view?usp=sharing">
+              <a href="https://drive.google.com/file/d/1yc2QfH671-qIlY5AABzJar_-qupsQRyT/view?usp=sharing">
                 <button className="bg-cyan-600 text-white px-4 py-2 rounded-full shadow-md hover:bg-cyan-500">
                   Download CV
                 </button>

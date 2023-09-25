@@ -1,12 +1,8 @@
 import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
 import project1 from "../assets/images/warung.jpg";
 import project2 from "../assets/images/karyawan.jpg";
 import project3 from "../assets/images/berita.png";
 import project4 from "../assets/images/mini.png";
-import "swiper/css";
-import "swiper/css/pagination";
-import { Pagination, Autoplay } from "swiper";
 import { FaReact } from "react-icons/fa";
 import { SiMongodb, SiExpress, SiBootstrap, SiHtml5 } from "react-icons/si";
 
@@ -54,7 +50,8 @@ const Project = () => {
         { name: "Html5", icon: <SiHtml5 /> },
         { name: "Bootstrap", icon: <SiBootstrap /> },
       ],
-      github_link: "https://gitlab.com/agungfay10/im-sanbercode-laravel-web-dev/-/tree/main/3.%20Bootstrap?ref_type=heads",
+      github_link:
+        "https://gitlab.com/agungfay10/im-sanbercode-laravel-web-dev/-/tree/main/3.%20Bootstrap?ref_type=heads",
     },
   ];
   return (
@@ -65,60 +62,41 @@ const Project = () => {
         </h3>
       </div>
       <br />
-      <div className="flex items-center justify-center">
-        <div className="lg:w-2/3 w-full">
-          <Swiper
-            slidesPerview={1.2}
-            spaceBetween={20}
-            breakpoints={{
-              768: {
-                slidesPerView: 1,
-              },
-            }}
-            loop={true}
-            autoplay={{
-              delay: 4000,
-            }}
-            pagination={{
-              clickable: true,
-            }}
-            modules={[Pagination, Autoplay]}
-          >
-            {projects.map((project_info, i) => (
-              <SwiperSlide key={i}>
-                <div className="h-fit w-4/6 p-6 bg-slate-700 rounded-xl mx-auto my-auto text-center">
-                  <img src={project_info.img} alt="" className="rounded-lg" />
-                  <h3 className="text-sm text-left my-3">
-                    {project_info.name}
-                  </h3>
-                  <p className="text-sm text-left my-3">
-                    {project_info.description}
-                  </p>
-                  <div className="text-sm text-left my-3">
-                    <p>
-                      <strong>Tools:</strong>
-                    </p>
-                    <div className="p-2 flex items-center">
-                      {project_info.tools.map((tool, index) => (
-                        <div key={index} className="flex items-center mr-4">
-                          {tool.icon} <span className="ml-2">{tool.name}</span>
-                        </div>
-                      ))}
+      <div className="lg:w-2/3 w-full mx-auto">
+        <div
+          data-aos="fade-up"
+          className="grid grid-cols-1 sm:grid-cols-2 gap-6"
+        >
+          {projects.map((project_info, i) => (
+            <div key={i} className="bg-slate-700 rounded-xl p-6 text-center">
+              <img src={project_info.img} alt="" className="rounded-lg" />
+              <h3 className="text-sm text-left my-3">{project_info.name}</h3>
+              <p className="text-sm text-left my-3">
+                {project_info.description}
+              </p>
+              <div className="text-sm text-left my-3">
+                <p>
+                  <strong>Tools:</strong>
+                </p>
+                <div className="p-2 flex items-center">
+                  {project_info.tools.map((tool, index) => (
+                    <div key={index} className="flex items-center mr-4">
+                      {tool.icon} <span className="ml-2">{tool.name}</span>
                     </div>
-                  </div>
-                  <div className="flex gap-3">
-                    <a
-                      href={project_info.github_link}
-                      target="_blank"
-                      className="text-white bg-cyan-600 hover:bg-cyan-700 px-4 py-2 rounded-lg transition-colors duration-300 ease-in-out flex items-center justify-center text-sm sm:text-base"
-                    >
-                      Visit Project
-                    </a>
-                  </div>
+                  ))}
                 </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
+              </div>
+              <div className="flex gap-3">
+                <a
+                  href={project_info.github_link}
+                  target="_blank"
+                  className="text-white bg-cyan-600 hover:bg-cyan-700 px-4 py-2 rounded-lg transition-colors duration-300 ease-in-out flex items-center justify-center text-sm sm:text-base"
+                >
+                  Source Code
+                </a>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>
